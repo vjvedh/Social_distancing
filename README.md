@@ -3,7 +3,6 @@ Social Distancing App
 > In the first step, focal length 'f' of the camera was calculated by taking a reference object of width 'w' and at a distance of 'd'.
      f = ( (Pixcel_width of the object in image) * d ) / w
   For my camera; w = 17cm, d = 30cm, Pixcel_widht = 200px, f = 400
-  
   Hence, for detection of distance from camera = (f * w) / Pixcel_width
 
 > In the second step, the face was captured and a bounding box was put over the face using Haar Cascade Frontal-face Model.
