@@ -90,7 +90,7 @@ while True:
                 cv2.line(photo, (centroid[i][0], centroid[i][1]), (centroid[j][0], centroid[j][1]), (0, 0, 255), 2)
                 cv2.putText(photo, dP, (int((centroid[i][0]+centroid[j][0])/2),int((centroid[i][1]+centroid[j][1])/2)-10), font, 0.65, (0,255,0), 2)
                 
-                #run if person is not maintaing social distancing 6feets i.e. 72 inches
+                #run if person is not maintaing social distancing 
                 if (distance_from_camera(width_of_face, focal_length,d)) < 40 :
                     person_in_contact += "Person "+str(i+1)+" and Person "+str(j+1)+" ; "
                     person_in_contact += " are not following social distancing "
